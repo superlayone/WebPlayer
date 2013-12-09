@@ -1,0 +1,30 @@
+<!--
+  
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+  <!--Add essentials-->
+  <script language="javascript" src="js/jquery.min.js"></script>
+  <script language="javascript" src="js/jquery-vlc.js"></script>
+  <link   href="css/styles.css" rel="stylesheet"/>
+</head>
+<script type="text/javascript">
+ 	function play(instance, uri) {
+        VLCobject.getInstance(instance).play(uri);
+    }
+    var player = null;
+    $(document).ready(function() {
+
+        player = VLCobject.embedPlayer('vlc', 800, 480, true);
+    });
+</script>
+<body>
+	<h2>Test VLC plugin demo</h2>
+	<input id='uri' value='rtsp://219.245.64.33/oceans.webm' size=70 type='text'><button onclick="play('vlc', $('#uri').val())">Play</button>
+	<br><br><br>
+	<div id='vlc'>Plug in</div>
+	<br>
+</body>
+</html>
