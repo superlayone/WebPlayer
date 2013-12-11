@@ -21,19 +21,7 @@ Some rights reserved!**Layone** 2013!
 
 #API
 
-    // create a  player in div '#vlc'
-    var player = VLCobject.embedPlayer('vlc', 800, 480, true);
-    player.play('rtsp://Ur rtsp path');
-    
-    // set a [VLC option][2]
-    player.options.set("start-time", 50); 
-    // reset all VLC options
-    player.options.clear(); 
-    // start playing uri
-    player.play(uri); 
-    // stop playing
-    player.stop(); 
-
+- See API.md
 
 # Definitions
 It is a plugin based on vlc,soome rights reserved!
